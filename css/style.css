@@ -14,11 +14,35 @@
 }
 
 body {
+  width: 1600px;
+
   background-color: var(--white-color);
   color: var(--main-text-color);
+
   font-family: var(--main-text-family);
   font-weight: var(--main-text-weight);
   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo,
@@ -115,27 +139,72 @@ body {
 }
 
 /* Main page styles */
-.hero {
-  background-color: var(--background-footer-color);
-  color: var(--white-color);
+/* Hedear styles */
+.header {
+  display: flex;
+  align-items: center;
+
+  border-bottom-color: #ececec;
+  border-color: transparent;
+  border-bottom: 1px;
+
+  border-style: solid;
 }
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-list > li {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.nav-list > li:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+.contact-list > li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.hero {
+  color: var(--white-color);
+  background-color: var(--background-footer-color);
+  text-align: center;
+}
+
 .title-hero {
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
-  line-height: 0.73;
+  line-height: 1.36;
   text-align: center;
+  vertical-align: baseline;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button-hero {
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  margin-top: 30px;
+
   background-color: var(--link-text-color);
   color: var(--white-color);
+
   font-family: inherit;
   font-style: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -165,9 +234,22 @@ body {
   text-transform: uppercase;
 }
 .our-pluses p {
+  margin-top: 10px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.our-pluses-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 94px;
+}
+.our-pluses-list > li {
+  width: 270px;
 }
 
 .our-work > h2,
@@ -179,7 +261,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.our-work {
+  margin-top: 94px;
+}
+
+.our-work-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.our-team > h2 {
+  padding-top: 94px;
+}
 .our-team h3 {
+  margin-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -187,6 +286,9 @@ body {
   letter-spacing: 0.03em;
 }
 .our-team p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -194,14 +296,39 @@ body {
 }
 
 .our-team {
+  margin-top: 94px;
   background-color: var(--background-color-primery);
 }
 .our-team li {
   background-color: var(--white-color);
 }
 
+.our-team-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
 /* Portfolio */
+
+.portfolio-section {
+  margin-bottom: 94px;
+}
+.portfolio-nav-list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 94px;
+}
+
 .portfolio-nav-list button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border-color: transparent;
+
   background-color: var(--background-color-primery);
   color: var(--title-text-color);
 
@@ -215,6 +342,11 @@ body {
 
   cursor: pointer;
 }
+
+.portfolio-nav-list-iteam:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-nav-list button:hover,
 .portfolio-nav-list button:focus {
   background-color: var(--link-text-color);
@@ -225,13 +357,41 @@ body {
   color: var(--white-color);
 }
 .portfolio-section h2 {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-section p {
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.portfolio-section-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 34px;
+}
+
+.portfolio-section-list-iteam {
+  width: calc ((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-section-list-iteam:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-section-list-iteam:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
