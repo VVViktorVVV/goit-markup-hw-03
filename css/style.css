@@ -155,7 +155,8 @@ li {
   display: flex;
   margin-left: 93px;
 }
-.nav-list > li {
+.nav-list a {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -169,8 +170,13 @@ li {
 .contact-list > li:not(:last-child) {
   margin-right: 50px;
 }
+.contact-list a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .hero {
+  margin-bottom: 94px;
   color: var(--white-color);
   background-color: var(--background-footer-color);
   text-align: center;
@@ -225,7 +231,9 @@ li {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.our-pluses {
+  margin-bottom: 94px;
+}
 .our-pluses h3 {
   font-weight: 700;
   font-size: 14px;
@@ -245,8 +253,6 @@ li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
-  margin-top: 94px;
 }
 .our-pluses-list > li {
   width: 270px;
@@ -262,7 +268,7 @@ li {
 }
 
 .our-work {
-  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .our-work-list {
@@ -296,7 +302,6 @@ li {
 }
 
 .our-team {
-  margin-top: 94px;
   background-color: var(--background-color-primery);
 }
 .our-team li {
@@ -315,13 +320,14 @@ li {
 /* Portfolio */
 
 .portfolio-section {
+  margin-top: 94px;
   margin-bottom: 94px;
 }
 .portfolio-nav-list {
   display: flex;
   justify-content: center;
 
-  margin-top: 94px;
+  margin-bottom: 34px;
 }
 
 .portfolio-nav-list button {
@@ -380,8 +386,6 @@ li {
 .portfolio-section-list {
   display: flex;
   flex-wrap: wrap;
-
-  margin-top: 34px;
 }
 
 .portfolio-section-list-iteam {
