@@ -14,8 +14,6 @@
 }
 
 body {
-  width: 1600px;
-
   background-color: var(--white-color);
   color: var(--main-text-color);
 
@@ -121,6 +119,8 @@ li {
 
 .footer {
   background-color: var(--background-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address {
   color: var(--white-color);
@@ -138,17 +138,26 @@ li {
   color: var(--link-text-color);
 }
 
+.footer .logo .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.address-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 /* Main page styles */
 /* Hedear styles */
 .header {
-  display: flex;
-  align-items: center;
-
   border-bottom-color: #ececec;
   border-color: transparent;
   border-bottom: 1px;
-
   border-style: solid;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -156,7 +165,7 @@ li {
   margin-left: 93px;
 }
 .nav-list a {
-  display: inline-block;
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -176,7 +185,8 @@ li {
 }
 
 .hero {
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   color: var(--white-color);
   background-color: var(--background-footer-color);
   text-align: center;
@@ -232,7 +242,8 @@ li {
   overflow: hidden;
 }
 .our-pluses {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-pluses h3 {
   font-weight: 700;
@@ -258,8 +269,8 @@ li {
   width: 270px;
 }
 
-.our-work > h2,
-.our-team > h2 {
+.our-work h2,
+.our-team h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -268,7 +279,7 @@ li {
 }
 
 .our-work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .our-work-list {
@@ -279,9 +290,6 @@ li {
   margin-top: 50px;
 }
 
-.our-team > h2 {
-  padding-top: 94px;
-}
 .our-team h3 {
   margin-top: 30px;
 
@@ -303,6 +311,8 @@ li {
 
 .our-team {
   background-color: var(--background-color-primery);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team li {
   background-color: var(--white-color);
@@ -314,14 +324,13 @@ li {
   flex-wrap: wrap;
 
   margin-top: 50px;
-  padding-bottom: 94px;
 }
 
 /* Portfolio */
 
 .portfolio-section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfolio-nav-list {
   display: flex;
